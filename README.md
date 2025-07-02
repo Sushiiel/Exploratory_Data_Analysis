@@ -1,34 +1,68 @@
-# Exploratory Data Analysis (EDA) Project
+# 📊 Exploratory Data Analysis (EDA) with SHAP
 
-This repository contains an Exploratory Data Analysis (EDA) for [Project Name], aimed at understanding the key patterns, trends, and relationships within the dataset. This analysis includes data visualization, summary statistics, and initial findings that can guide further data processing or modeling.
+This repository showcases an Exploratory Data Analysis (EDA) project enriched with **SHAP (SHapley Additive exPlanations)** to interpret the impact of features on model predictions. The project demonstrates both classic EDA techniques and model explainability.
 
-## Project Structure
+## 📁 Files
 
-- **EDA.ipynb**: The main Jupyter notebook that includes all analysis, visualizations, and code explanations.
-- **README.md**: Overview of the project, guiding users through the contents and goals of the analysis.
-- **data/**: (Optional) Directory to store raw and processed data files if needed for further steps.
-- **images/**: (Optional) Directory for saving figures or charts generated during the EDA.
+- `EDA.ipynb`: Main notebook performing the EDA, modeling, and SHAP analysis.
+- `README.md`: Project overview and documentation.
 
-## Key Objectives
+---
 
-1. **Data Understanding**: Explore the dataset to comprehend the structure, attributes, and data types.
-2. **Data Cleaning**: Handle missing values, outliers, and inconsistencies for a cleaner dataset.
-3. **Univariate Analysis**: Study each variable individually through summary statistics and distribution plots.
-4. **Bivariate and Multivariate Analysis**: Investigate relationships between features using correlation matrices, scatter plots, and other techniques.
-5. **Key Insights**: Document observations and findings to support decision-making or further analysis.
+## 🎯 Objectives
 
-## Getting Started
+- Understand the structure and quality of the dataset
+- Uncover relationships, trends, and outliers using visual and statistical methods
+- Train a baseline machine learning model
+- Use **SHAP** to explain feature importance and individual predictions
 
-### Prerequisites
+---
 
-To run the notebook, you will need the following libraries:
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
+## 🛠️ Tools & Libraries Used
 
-### Running the Notebook
+- `Python 3.x`
+- `pandas`, `numpy`
+- `matplotlib`, `seaborn`
+- `scikit-learn`
+- `shap`
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Sushiiel/Exploratory_Data_Analysis.git
+---
+
+## 🔍 EDA Workflow Overview
+
+### 1. Data Preprocessing
+- Handling missing values and duplicates
+- Data type conversions
+
+### 2. Exploratory Data Analysis
+- Summary statistics
+- Univariate and bivariate plots
+- Correlation analysis
+
+### 3. Baseline Modeling
+- Feature selection
+- Model training (e.g., RandomForest, XGBoost)
+
+### 4. Explainable AI with SHAP
+- SHAP summary plot (global feature importance)
+- SHAP dependence plots (individual feature behavior)
+- Force plots (individual prediction explanation)
+
+---
+
+## 📊 Sample Visualizations
+
+- 📉 Histograms, boxplots, and heatmaps
+- 🔍 SHAP Summary Plot
+- 🧠 SHAP Force Plot
+- 📈 SHAP Dependence Plot
+
+---
+
+## 📌 How to Run
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/yourusername/eda-shap-project.git
+cd eda-shap-project
